@@ -1,1 +1,1 @@
-# Omnia-Foundation-Docs
+# Omnia Foundation Docs
