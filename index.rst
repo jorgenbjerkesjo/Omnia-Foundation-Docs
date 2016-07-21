@@ -12,4 +12,5 @@ Topics
 
     getting-started
     fundamentals/index
+    client-side-development/index
     release-notes
