@@ -48,7 +48,7 @@ Open the file **environment.json** in MyOmniaExtension  and fill in:
 5. Deploy your extension
 ##############################################################
 
-Right click on MyOmniaExtension project and click Omnia
+Right click on MyOmniaExtension project and click Omnia Deploy
 
 .. image:: /images/toolings-omnia-deploy.png
 
@@ -56,3 +56,17 @@ You can see the deployment progress in the Output window in Visual Studio
 
 .. image:: /images/toolings-omnia-deploy-output.png 
 
+6. Verify 
+##############################################################
+
+After the extension has been deployed successfully to Omnia, you can verify it by navigating to **System > Extension** in Omnia admin
+
+.. image:: /images/omnia-admin-new-extension-success.png 
+
+And in the **Features** page you should see the features from your extension. Click on MyOmniaExtension Sample Feature Core and click Activate.
+
+.. image:: /images/omnia-admin-new-extension-feature.png 
+
+After the feature has been activate, refresh the page and you should see the hello world page from your extension:
+
+.. image:: /images/omnia-admin-new-extension-helloworld.png 
