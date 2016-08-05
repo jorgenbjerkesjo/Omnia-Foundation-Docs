@@ -10,7 +10,7 @@ Getting Started
 .. image:: /images/toolings-project-templates.png
 
 .. note:: 
-    - **Omnia Documentation** - Project template for Omnia documentation package
+    - **Omnia Documentation** - Project template for empty Omnia documentation package
     - **Omnia Extension** - Project template for empty Omnia extension package
     - **Omnia Extension Sample** - Project template for Omnia extension package and Web API with samples
     - **Omnia Extension With Web API** -  Project template for empty Omnia extension package and Web API
@@ -19,7 +19,21 @@ A project created with Omnia Extension Sample template will have a stucture like
 
 .. image:: /images/toolings-project-structure.png
 
-3. Register your extension in Omnia Foundation
+3. Configure Precio Fishbone NuGet package source in Visual Studio
+##############################################################
+
+Precio Fishbone NuGet package source is needed for download Omnia NuGet packages. To configure Precio Fishbone NuGet package source, follow these steps:
+
+- In Visual Studio, navigate to **Tools > NuGet Packages Manager > Packages Manager Settings**
+
+- In the Options dialog, select **Package Sources** in the left pane
+
+- Add a new package source named Precio Fishbone with this URL `<http://nuget.preciofishbone.se/api/v2>`_
+
+.. image:: /images/nuget-package-source.png
+
+
+4. Register your extension in Omnia Foundation
 ##############################################################
 
 Open the file **extension.json** in MyOmniaExtension project and copy the extension ID
@@ -34,18 +48,18 @@ Fill in your extension ID and click create. Your extension will be registered wi
 
 .. image:: /images/omnia-admin-new-extension-secret.png
 
-4. Set the environment information in your project
+5. Set the environment information in your project
 ##############################################################
 
 Open the file **environment.json** in MyOmniaExtension  and fill in:
 
-- TenantId: You can get from the System page in Omnia admin
-- ApiSecret: The secret you get when registered your extension in step 3
+- TenantId: you can get from the System page in Omnia admin
+- ApiSecret: the secret you got when registered your extension in step 3
 - FoundationUrl: the URL to your Omnia admin 
 
 .. image:: /images/toolings-environment-json.png
 
-5. Deploy your extension
+6. Deploy your extension
 ##############################################################
 
 Right click on MyOmniaExtension project and click Omnia Deploy
@@ -56,7 +70,7 @@ You can see the deployment progress in the Output window in Visual Studio
 
 .. image:: /images/toolings-omnia-deploy-output.png 
 
-6. Verify 
+7. Verify 
 ##############################################################
 
 After the extension has been deployed successfully to Omnia, you can verify it by navigating to **System > Extension** in Omnia admin
