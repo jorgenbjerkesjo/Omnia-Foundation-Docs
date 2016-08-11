@@ -15,7 +15,7 @@ Getting Started
     - **Omnia Extension Sample** - Project template for Omnia extension package and Web API with samples
     - **Omnia Extension With Web API** -  Project template for empty Omnia extension package and Web API
 
-A project created with Omnia Extension Sample template will have a stucture like this
+A project created with Omnia Extension Sample template will have a structure like this
 
 .. image:: /images/toolings-project-structure.png
 
