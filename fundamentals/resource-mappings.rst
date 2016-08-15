@@ -1,7 +1,7 @@
 Resource Mappings
 ============================
 
-In an Omnia extension, every resource files needed to be mapped with a unique ID. The resource mappings are defined with an attribute-based pattern like other entities in Omnia like feature, jobs and SharePoint artifacts.
+In an Omnia extension, every resource files need to be mapped with a unique ID. The resource mappings are defined with an attribute-based pattern like other entities in Omnia like feature, jobs and SharePoint artifacts.
 
 .. image:: /images/extensionpackage-resourcemapping.png
 
@@ -10,7 +10,7 @@ The resource mappings aslo help create an logical hierachy or grouping of resour
 In the resource mappings you can also specify different properties and metadata.
 
 Folders mapping
---------------------------------------------------
+##################################################
 
 .. code-block:: c#
 
@@ -22,7 +22,7 @@ Folders mapping
 
         
 Generic files mapping
---------------------------------------------------
+##################################################
 
 .. code-block:: c#
 
@@ -31,7 +31,7 @@ Generic files mapping
   public string SampleCoreJs { get; set; }
 
 Site templates mapping
---------------------------------------------------
+##################################################
 
 .. code-block:: c#
   
@@ -41,7 +41,7 @@ Site templates mapping
   public string SampleTemplate { get; set; }
 
 Localization files mapping
---------------------------------------------------
+##################################################
 
 .. code-block:: c#
 
@@ -54,7 +54,7 @@ Localization files mapping
   public string SampleLocalizationSvSe { get; set; }
 
 SharePoint masterpages mapping
---------------------------------------------------
+##################################################
 
 .. code-block:: C#
 
@@ -66,7 +66,7 @@ SharePoint masterpages mapping
   public string PortalMaster { get; set; }
 
 SharePoint webparts mapping
---------------------------------------------------
+##################################################
 
 .. code-block:: c#
 
@@ -76,7 +76,7 @@ SharePoint webparts mapping
  public string SampleWebPart { get; set; }
 
 SharePoint pagelayouts mapping
---------------------------------------------------
+##################################################
 
 .. code-block:: c#
 
@@ -90,7 +90,7 @@ SharePoint pagelayouts mapping
 
 
 Working with resource mappings
-##################################################
+--------------------------------------------------
 
 When developing new extension, after you have all the resources ready, you can create a new resource mapping class using Omnia toolings
 
