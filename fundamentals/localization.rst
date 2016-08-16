@@ -12,7 +12,7 @@ In Omnia, localization strings are stored in JSON tenant resources. You can crea
 Each localization file contains the localization strings for only one language, and it need to follow this naming convention:
 
 - ***.loc.json** for default language (English) localization. Example: sample.loc.json
-- ***.loc.[culture code].json** for other langauge localization. Example: sample.loc.sv-se.
+- ***.loc.[culture code].json** for other langauge localization. Example: sample.loc.sv-se.json
 
 Most of the case, localization files with the same name but different culture code should contain the same JSON structure with different string values. 
 
