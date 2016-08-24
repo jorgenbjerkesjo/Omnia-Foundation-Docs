@@ -15,10 +15,10 @@ Dev Preview 1.0.1.1317-217
 `Download vsix <http://nuget.preciofishbone.se/omniatoolings/dev/omniatooling.1.0.1.1317-217.vsix>`_
 
 
-Stable 1.0.1.?
+Stable 1.0.1.1115-38
 --------------------------------------------------
 
-`Download vsix <http://nuget.preciofishbone.se/omniatoolings/dev/omniatooling.1.0.1.1317-217.vsix2>`_
+`Download vsix <http://nuget.preciofishbone.se/omniatoolings/prod/omniatooling.1.0.1.1115-38.vsix>`_
 
 
 
