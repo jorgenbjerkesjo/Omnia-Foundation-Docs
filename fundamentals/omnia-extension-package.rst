@@ -1,22 +1,22 @@
 Omnia Extension Package
 ============================
 
-Omnia Foundation is built with extensibility in mind since the first day and Omnia extension package is the main way to extend Omnia. This article will give an overview of what you could achieve with extension package and the basic structure of an extension package. For a more practical guide on how to start developing Omnia extensions see the `Getting Started </getting-started.html>`_ guide.
+Omnia Foundation is built with extensibility in mind since day one and an Omnia Extension Package is the main way to extend Omnia. This article will give an overview of what you can achieve with extension packages and the basic structure of an extension package. For a more practical guide on how to start developing Omnia extensions see the `Getting Started </getting-started.html>`_ guide.
 
-What is Omnia extension package
+What is an Omnia Extension Package?
 ##################################################
 
-Omnia extension package is a pack of features or extensions for Omnia. You can think of it like SharePoint solution packages but for Omnia platform. An extension can be used to deploy all kinds of new features, from small UI changes to non-trivia applications with its own back-end and database. Examples are `Omnia Intranet <#>`_ and `Omnia Documentation Management <#>`_.
+An Omnia extension package is a pack of features or extensions for Omnia. You can think of it like SharePoint solution packages but for the Omnia platform. An extension can be used to deploy all kinds of new features, from small UI changes to non-trivia applications with its own back-end and database. Examples are `Omnia Intranet <#>`_ and `Omnia Documentation Management <#>`_.
 
 .. image:: /images/extensionpackage.png
 
-At the core of an extension package are resource files. Resource files can be anything from client-side code like JavaScript, CSS, HTML templates to SharePoint artifacts like pagelayouts and webparts. These resources are `mapped and deployed </fundamentals/resource-mappings.html>`_ by logical containers called `Omnia features </fundamentals/omnia-feature.html>`_.
+At the core of an extension package are resource files. Resource files can be anything from client-side code like JavaScript, CSS, HTML templates to SharePoint artifacts like page layouts and web parts. These resources are `mapped and deployed </fundamentals/resource-mappings.html>`_ by logical containers called `Omnia features </fundamentals/omnia-feature.html>`_.
 
 For example, the resources in a large extension might looks like this
 
 .. image:: /images/extensionpackage-tenantresources.png
 
-Extension package can also contains `Omnia jobs </fundamentals/omnia-job.html>`_, pieces of code that will be ran as scheduled tasks in Omnia, and `provisioning modules <#>`_, pieces of code that will be hooked into the provisioning pipeline of Omnia. 
+An extension package can also contain `Omnia jobs </fundamentals/omnia-job.html>`_, pieces of code that will run as scheduled tasks in Omnia, and `provisioning modules <#>`_, pieces of code that will be hooked into the site provisioning pipeline of Omnia. 
 
 Manage extension packages
 ##################################################
