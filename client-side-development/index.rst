@@ -10,8 +10,8 @@ Topics
 .. toctree::
     :titlesonly:
 
-    Angular1/index
-    Angular2/index
+    angular-1/index
+    angular-2/index
     
 
     
