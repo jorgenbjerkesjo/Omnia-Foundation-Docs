@@ -12,6 +12,7 @@ Topics
 
     getting-started
     fundamentals/index
+    sharepoint-provisioning/index
     client-side-development/index
     release-notes
     tooling
