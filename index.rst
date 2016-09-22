@@ -14,5 +14,6 @@ Topics
     fundamentals/index
     sharepoint-provisioning/index
     client-side-development/index
+    jobs/index
     release-notes
     tooling

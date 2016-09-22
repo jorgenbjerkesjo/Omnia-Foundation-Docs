@@ -10,13 +10,13 @@ An Omnia extension package is a pack of features or extensions for Omnia. You ca
 
 .. image:: /images/extensionpackage.png
 
-At the core of an extension package are resource files. Resource files can be anything from client-side code like JavaScript, CSS, HTML templates to SharePoint artifacts like page layouts and web parts. These resources are `mapped and deployed </fundamentals/resource-mappings.html>`_ by logical containers called :doc:`Omnia feature </fundamentals/omnia-feature>`.
+At the core of an extension package are resource files. Resource files can be anything from client-side code like JavaScript, CSS, HTML templates to SharePoint artifacts like page layouts and web parts. These resources are :doc:`mapped and deployed </fundamentals/resource-mappings>`_ by logical containers called :doc:`Omnia feature </fundamentals/omnia-feature>`.
 
 For example, the resources in a large extension might looks like this
 
 .. image:: /images/extensionpackage-tenantresources.png
 
-An extension package can also contain `Omnia jobs </fundamentals/omnia-job.html>`_, pieces of code that will run as scheduled tasks in Omnia, and `provisioning modules <#>`_, pieces of code that will be hooked into the site provisioning pipeline of Omnia. 
+An extension package can also contain :doc:`Omnia jobs </fundamentals/omnia-jobs`_, pieces of code that will run as scheduled tasks in Omnia, and `provisioning modules <#>`_, pieces of code that will be hooked into the site provisioning pipeline of Omnia. 
 
 Manage extension packages
 ##################################################
@@ -25,7 +25,7 @@ All extension packages in a tenant can be managed in Omnia admin, **System > Ext
 
 .. image:: /images/omnia-admin-new-extension-upload.png
 
-New extensions can be uploaded directly from this UI by drag and drop or from Visual Studio using Omnia Tooling. An extension need to be registered before it can be uploaded, see the `Getting Started </getting-started.html>`_ guide for more details.
+New extensions can be uploaded directly from this UI by drag and drop or from Visual Studio using Omnia Tooling. An extension need to be registered before it can be uploaded, see the :doc:`Getting Started </getting-started>`_ guide for more details.
 
 In this UI you can also manage configurations for each extension by clicking on the extension name
 

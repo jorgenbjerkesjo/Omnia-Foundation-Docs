@@ -4,15 +4,23 @@ Here you can find the releases of the Omnia Tooling for Visual Studio 2013/2015
 
 
 
-Dev Preview 1.0.1.1331-218
+Stable 1.0.1.1699-48
 --------------------------------------------------
 
-- Include item templates for Angular 2 controls  
-- Live Reload support for tenant bundles
+**What`s new**
 
-.. note:: The Omnia Control Templates for Angular 2 is not production ready yet and is only for testing purposes! For production use the Omnia Control templates for Angular 1.
+- Omnia Control Item Templates for Angular 2
+- Built in websever for hosting Tenant bundles locally
+- Live Reload support for Tenant bundles
 
-`Download vsix <http://nuget.preciofishbone.se/omniatoolings/dev/omniatooling.1.0.1.1331-218.vsix>`_
+.. note:: The Omnia Control Templates for Angular 2 is only for preview purposes since the Angular 2 RTM was just released we removed the bootstrapping for Angular 2 in Foundation until we have a working version running on Angular 2 RTM
+
+**Bug fixes**
+
+- The item template for Field contained a space in the internalname which could cause problems in provisioning
+- Item Template for Omnia Control without settings should have enableSettings value set to false and the constructor should not have the ControlConfigService injected
+
+`Download vsix <http://nuget.preciofishbone.se/omniatoolings/prod/omniatooling.1.0.1.1699-48.vsix>`_
 
 
 Stable 1.0.1.1115-38
