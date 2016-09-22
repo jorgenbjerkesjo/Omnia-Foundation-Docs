@@ -14,7 +14,7 @@ Each localization file contains the localization strings for only one language, 
 - ***.loc.json** for default language (English) localization. Example: sample.loc.json
 - ***.loc.[culture code].json** for other langauge localization. Example: sample.loc.sv-se.json
 
-Most of the case, localization files with the same name but different culture code should contain the same JSON structure with different string values. 
+Most of the cases, localization files with the same name but different culture code should contain the same JSON structure with different string values. 
 
 .. note:: 
     The first level of the JSON will aways be "Public" or "Admin" depend on the localization target. You do not need to include "Public" or "Admin" part when getting localized strings.
