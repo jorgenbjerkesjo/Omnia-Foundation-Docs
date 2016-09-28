@@ -5,31 +5,37 @@ Bundling is the process of concatinate multiple files into a single file. In web
 
 In Omnia feature you can specify which JavaScript and CSS resources to be bundled and which application the bundle is targeted for (more on this in bundle targets section). When that feature is activated, those resources will be add to the bundle corresponding to the feature's scope and the target application.
 
+To bundle resources, override the method OnTenantResourceMappings in your Omnia feature and use the method CreateBundleFor of the resourceMapper. 
+
 .. code-block:: c#
 
     public override void OnTenantResourceMappings(TenantResourcesMapper resourceMapper)
     {
         resourceMapper
-            .AddOrUpdateTenantResourcesFrom<TenantResources>();
-
-        resourceMapper
-            .CreateBundleFor(Models.Features.BundleTargets.SharePoint)                
-            .Include<TenantResources.Enums>()
-            .Include<TenantResources.Core>()
-            .Include<TenantResources.Services>()
-            .Include<TenantResources.Directives>()
-            .Include<TenantResources.Styles>();
-
-        resourceMapper
-            .CreateBundleFor(Models.Features.BundleTargets.OmniaAdmin)                
-            .Include<TenantResources.Enums>()
-            .Include<TenantResources.Core>()
-            .Include<TenantResources.Services>()
-            .Include<TenantResources.Directives>()
-            .Include<TenantResources.Styles>()
-            .Include<TenantResources.AdminSettings.Controllers>()
-            .Include<TenantResources.AdminSettings>();        
+            .CreateBundleFor(Models.Features.BundleTargets.SharePoint)                            
+            .Include<ResourcesMapping.Core>()
+            .Include<ResourcesMapping.Services>(q => q.AjaxService)
+            .Include<ResourcesMapping.Services>();
     }     
+
+You can add specific file from the `resources mapping </fundamentals/resource-mappings.html>`_
+
+.. code-block:: c#
+
+    .Include<ResourcesMapping.Services>(q => q.AjaxService)
+
+Or you can add a whole folder and the resourceMapper will recursively include every files in that folder. The resource mapper will be smart enough to not include a file again if it is already in the bundle
+
+.. code-block:: c#
+
+    .Include<ResourcesMapping.Services>(q => q.AjaxService)
+    .Include<ResourcesMapping.Services>()
+
+The resources will be bundled in the same order as they were included here. In this example, the resources will be bundled in the following order:
+
+- All the files (recursively including child folders) in Core folder
+- The ajaxService file in Services folder 
+- All the files in Services folder (recursively including child folders) except for ajaxService
 
 Bundle scopes
 --------------------------------------------------
@@ -68,10 +74,36 @@ A general guideline on bundle targets would be:
 - Omnia controls should only target SharePoint.
 - Admin settings should only target OmniaAdmin.
 
+.. code-block:: c#
+
+    public override void OnTenantResourceMappings(TenantResourcesMapper resourceMapper)
+    {
+        resourceMapper
+            .AddOrUpdateTenantResourcesFrom<TenantResources>();
+
+        resourceMapper
+            .CreateBundleFor(Models.Features.BundleTargets.SharePoint)                
+            .Include<ResourcesMapping.Enums>()
+            .Include<ResourcesMapping.Core>()
+            .Include<ResourcesMapping.Services>()
+            .Include<ResourcesMapping.Directives>()
+            .Include<ResourcesMapping.Styles>();
+
+        resourceMapper
+            .CreateBundleFor(Models.Features.BundleTargets.OmniaAdmin)                
+            .Include<ResourcesMapping.Enums>()
+            .Include<ResourcesMapping.Core>()
+            .Include<ResourcesMapping.Services>()
+            .Include<ResourcesMapping.Directives>()
+            .Include<ResourcesMapping.Styles>()
+            .Include<ResourcesMapping.AdminSettings.Controllers>()
+            .Include<ResourcesMapping.AdminSettings>();        
+    }     
+
 Bundle sequence number
 --------------------------------------------------
 
-In some cases, the code need to be included in the bundle in a specific order. When adding tenant resources to bundle you can set the sequence number to determine the order of those resources in the bundle. 
+While you can specify the order of resources in your feature just by order they were included, sometimes you will also need to ensure the resources of one feature is loaded before the resources of other features. For that purpose you can set the sequence number for your feature bundle: 
 
 .. code-block:: c#
 
@@ -82,28 +114,28 @@ In some cases, the code need to be included in the bundle in a specific order. W
 
         resourceMapper
             .CreateBundleFor(Models.Features.BundleTargets.SharePoint)                
-            .Include<TenantResources.Enums>()
-            .Include<TenantResources.Core>()
-            .Include<TenantResources.Services>()
-            .Include<TenantResources.Directives>()
-            .Include<TenantResources.Styles>();
+            .Include<ResourcesMapping.Enums>()
+            .Include<ResourcesMapping.Core>()
+            .Include<ResourcesMapping.Services>()
+            .Include<ResourcesMapping.Directives>()
+            .Include<ResourcesMapping.Styles>();
 
         resourceMapper
             .CreateBundleFor(Models.Features.BundleTargets.OmniaAdmin)                
-            .Include<TenantResources.Enums>()
-            .Include<TenantResources.Core>()
-            .Include<TenantResources.Services>()
-            .Include<TenantResources.Directives>()
-            .Include<TenantResources.Styles>()
-            .Include<TenantResources.AdminSettings.Controllers>()
-            .Include<TenantResources.AdminSettings>();
+            .Include<ResourcesMapping.Enums>()
+            .Include<ResourcesMapping.Core>()
+            .Include<ResourcesMapping.Services>()
+            .Include<ResourcesMapping.Directives>()
+            .Include<ResourcesMapping.Styles>()
+            .Include<ResourcesMapping.AdminSettings.Controllers>()
+            .Include<ResourcesMapping.AdminSettings>();
         
         resourceMapper
             .SetBundlesSequence(90000, Models.Features.BundleTargets.SharePoint)
             .SetBundlesSequence(80000, Models.Features.BundleTargets.OmniaAdmin);
     }     
 
-The tenant resources with lower sequence number will be included first in the bundle. The default sequence number is 100000. You should not set the sequence number to lower than 100 because the sequence numbers from 0 to 100 are reserved for core features of Omnia Foundation.
+The bundle with lower sequence number will be included first in the bundle. The default sequence number is 100000. You should not set the sequence number to lower than 100 because the sequence numbers from 0 to 100 are reserved for core features of Omnia Foundation.
 
 Also, from the example you can see that the sequence number can be different for bundling targets.
 
