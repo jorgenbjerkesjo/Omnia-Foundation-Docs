@@ -24,7 +24,7 @@ UserFieldAttribute                 User field definition
 =================================  =====================================================================================
 
 
-Field definitions can be referenced booth in list definitions and contentype definitions so they are defined using class level attribute decoration. Below is an example of how to define a basic NoteField using the NoteFieldAttribute
+Field definitions can be referenced both in list definitions and content type definitions, so they are defined using class level attribute decoration. Below is an example of how to define a basic NoteField using the NoteFieldAttribute
 
 .. code-block:: c#
 
