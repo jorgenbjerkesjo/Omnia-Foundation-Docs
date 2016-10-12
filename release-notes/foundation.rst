@@ -1,5 +1,9 @@
-Release Notes
+Omnia Foundation
 ===============
+
+.. contents:: Sections:
+  :local:
+  :depth: 1
 
 1.0.1.1681 (2016-09-20)
 --------------------------------------------------

@@ -2,7 +2,9 @@ Omnia Tooling
 ===============
 Here you can find the releases of the Omnia Tooling for Visual Studio 2013/2015
 
-
+.. contents:: Sections:
+  :local:
+  :depth: 1
 
 Stable 1.0.1.1699-48
 --------------------------------------------------
