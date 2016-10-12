@@ -10,10 +10,7 @@ Topics
 .. toctree::
     :titlesonly:
 
-    configurations
-    localizations
-    dialogs
-    ajax
+ 
 
     
     

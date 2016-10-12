@@ -5,6 +5,8 @@ Multi Picker
 
 The multi picker is a dropdown component that supports multiple selected values, type-ahead search and customizable UI.
 
+.. image:: ../../../images/multipicker.png
+
 Sample
 ----------------------------
 
@@ -33,7 +35,6 @@ Sample
                     selected-items="department.members">
   </omf-multi-picker> 
 
-.. image:: ../../images/multipicker.png
 
 Properties
 ----------------------------

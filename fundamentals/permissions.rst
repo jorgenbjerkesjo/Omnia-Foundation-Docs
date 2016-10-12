@@ -2,10 +2,13 @@ Permissions
 ============================
 
 Omnia permission roles
---------------------------------------------------
+----d----------------------------------------------
 
 Omnia permission roles are security groups for managing access rights to Omnia resources. Permission roles can also be used to limit the access to the API of Omnia extensions. An Omnia permission role can be assign to a user or a security group in Office 365 and can be apply to site, site collection or tenant scope.
 
+.. contents:: Sections:
+  :local:
+  :depth: 1
 
 Create form for managing permission roles in Omnia extension
 --------------------------------------------------

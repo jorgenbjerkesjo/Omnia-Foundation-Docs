@@ -5,6 +5,8 @@ Single Picker
 
 The single picker is a dropdown component that supports type-ahead search and customizable UI.
 
+.. image:: ../../../images/singlepicker.png
+
 Sample
 ----------------------------
 
@@ -32,7 +34,7 @@ Sample
     pre-selected-item-id="department.managerId">
   </omf-single-picker>  
 
-.. image:: ../../images/singlepicker.png
+
 
 Properties
 ----------------------------

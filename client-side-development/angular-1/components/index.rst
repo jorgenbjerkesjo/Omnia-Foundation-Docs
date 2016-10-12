@@ -12,10 +12,6 @@ Topics
 
     single-picker
     multi-picker
-    people-picker
-    documen-picker
-    icon-picker
-    form-validator
     
 
     
