@@ -3,6 +3,10 @@ Omnia Feature
 
 Omnia features are modules containing customizations for Omnia. They are very similar to SharePoint features, except that they can provisioning resources to both SharePoint and to Omnia database. An Omnia feature can also run your custom code when they are activated, upgraded or removed.
 
+.. contents:: Sections:
+  :local:
+  :depth: 1
+
 Feature scopes
 --------------------------------------------------
 
@@ -65,7 +69,7 @@ Built-in methods and properties
 Create new feature
 --------------------------------------------------
 
-As usual, you can create new Omnia feature using the template from Omnia toolings 
+As usual, you can create new Omnia feature using the template from Omnia tooling 
 
 .. image:: /images/toolings-item-templates-feature.png
 
@@ -91,7 +95,7 @@ In a feature you can override the activation, decativation or upgrade events to 
 - Trigger queue jobs using Omnia Queues API
 
 
-**Example**: Provisioning new start page for the tartet site when activate the feature
+**Example**: Provisioning new start page for the target site when activating the feature
 
 .. code-block:: c#
 

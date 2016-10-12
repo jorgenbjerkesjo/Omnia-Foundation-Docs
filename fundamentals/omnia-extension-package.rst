@@ -3,6 +3,10 @@ Omnia Extension Package
 
 Omnia Foundation is built with extensibility in mind since day one and an Omnia Extension Package is the main way to extend Omnia. This article will give an overview of what you can achieve with extension packages and the basic structure of an extension package. For a more practical guide on how to start developing Omnia extensions see the `Getting Started </getting-started.html>`_ guide.
 
+.. contents:: Sections:
+  :local:
+  :depth: 1
+
 What is an Omnia Extension Package?
 ##################################################
 

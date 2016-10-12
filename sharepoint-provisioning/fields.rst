@@ -1,36 +1,46 @@
 Fields
 ============================
 
-By using the Metadata framework in Omnia its easy to provision Image Renditions to SharePoint using classes decorated with ImageRenditions attributes and a Omnia Feature to perform the provisioning
+Fields is used in Lists and Content Types in SharePoint and Omnia Foundation makes it easy to create field definitions by using attributes that can be provisioned using a :doc:`Omnia feature </fundamentals/omnia-feature>` or referenced in a :doc:`List definition </sharepoint-provisioning/lists>` definition.
 
-.. image:: images/image-renditions.png
+All field attributes are located in the **Omnia.Foundation.Extensibility.Fields** namespace
+and the following list contains the different attributes that can be used to create field definitions. 
+
+=================================  =====================================================================================
+Attribute                          Description
+=================================  =====================================================================================
+FieldAttribute                     The base attribute that all field attributes inherits from containing generic properties like title, description etc
+BooleanFieldAttribute              Boolean field definition
+CalculatedFieldAttribute           Calculated field definition
+DateTimeFieldAttribute             DateTime field definition
+HTMLFieldAttribute                 HTML field definition
+LookupFieldAttribute               Lookup field definition
+ManagedMetadataFieldAttribute      Managed metadata field definition
+NoteFieldAttribute                 Note field definition
+NumberFieldAttribute               Number field definition
+TextFieldAttribute                 Text field definition
+UrlFieldAttribute                  Url field definition
+UserFieldAttribute                 User field definition
+=================================  =====================================================================================
 
 
-To create Image Renditions start by creating a new class that inherits from ImageRenditionBase then apply the ImageRendition attribute on your class. The id of your Image Rendition should start on a higher number so that it wont conflict with the built in SharePoint and Omnia Image Renditions. SharePoint starts with Id 1 and ends on 4 and Omnia on 1001 and ends on 1004 but your customization could start on 2000 to be sure not to write over existing renditions. If you want the height to be dynamic then you can set 0
+Field definitions can be referenced booth in list definitions and contentype definitions so they are defined using class level attribute decoration. Below is an example of how to define a basic NoteField using the NoteFieldAttribute
 
 .. code-block:: c#
 
-    [ImageRendition(id: 1001, name: "$Localize:OMF.Core.ImageRenditions.Landscape;", width: 600, height: 300)]
-    [ImageRendition(id: 1002, name: "$Localize:OMF.Core.ImageRenditions.Square;", width: 300, height: 300)]
-    [ImageRendition(id: 1003, name: "$Localize:OMF.Core.ImageRenditions.Portrait;", width: 300, height: 450)]
-    [ImageRendition(id: 1004, name: "$Localize:OMF.Core.ImageRenditions.LandscapeSmallSize;", width: 300, height: 150)]
-    public class PortalCoreImageRendition : ImageRenditionBase
+    [NoteField(id: "37643EF6-2BB9-429B-BD19-4684FC7879DD", internalName: "MyNoteField",
+           Title = "My Title", Group = "Custom Group")]
+    public class MyNoteField : FieldBase
     {
+
     }
 
-Now that we have the specification of the Image Renditions all we need to do is to add the mapping code in the OnSharePointArtifacts method of an :doc:`Omnia feature </fundamentals/omnia-feature>`. that will perform the deployment. 
+.. note:: Even if the attribute is called **NoteFieldAttribute** its not necessary to include Attribute in the name **NoteField** is enough and that will make the code look more clean.
+  
+All field definitions requires the minimal **id** and **internalName** parameters since this is required to be able to create the field. For the different field attributes there are always minimal required parameters that need to be provided but there is also optional properties that can be specified. Below is an example of all the optional properties that can be specified on the NoteFieldAttribute
 
-.. note:: The provisioning must be done from a Site Collection scoped feature
+.. image:: images/notefield-properties.png
 
-.. code-block:: c#
-
-  public override void OnSharePointArtifactMappings(SharePointArtifactMapper artifactMapper)
-        {
-            artifactMapper.MapToImageRendition<PortalCoreImageRendition>();
-        }
-
-
-
-
+Now that we have a field definition we can either use a site-scoped or sitecollection-scoped :doc:`Omnia feature </fundamentals/omnia-feature>` to deploy it to a site or use it in a :doc:`List definition </sharepoint-provisioning/lists>`.
 
 

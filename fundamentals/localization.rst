@@ -1,7 +1,16 @@
 Localization
 ============================
 
-In Omnia, localization strings are stored in JSON tenant resources. You can create new localization file using the template from Omnia toolings
+Omnia Foundation has a powerful localization engine that is using localization strings stored in JSON. By usin json which is a language neutral format we can use it both server-side and client-side. 
+
+.. contents:: Sections:
+  :local:
+  :depth: 1
+
+Creating localization files
+--------------------------------------------------
+
+You can create new localization file using the template from Omnia toolings
 
 .. image:: /images/toolings-item-templates-localization.png
 
@@ -138,10 +147,10 @@ Server-side code can also use localized strings. Typical examples are localized 
         }
     }
 
-Customize localization from Omnia admin app
+Override localization in the Omnia admin app
 --------------------------------------------------
 
-End users can change the localized strings using Omnia admin app at **System > Localization**
+End users can change the localized strings using the Omnia admin app at **System > Localization**
 
 .. note:: 
     Once a localized string has been changed in the admin app it will not be updated when a newer version of extension package is deployed. To make get the latest version of the localization users need to undo the customization. On the otherhand, when an extension package is removed all customization will also be removed.

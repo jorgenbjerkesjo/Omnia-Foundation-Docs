@@ -5,6 +5,13 @@ Bundling is the process of concatinate multiple files into a single file. In web
 
 In Omnia feature you can specify which JavaScript and CSS resources to be bundled and which application the bundle is targeted for (more on this in bundle targets section). When that feature is activated, those resources will be add to the bundle corresponding to the feature's scope and the target application.
 
+.. contents:: Sections:
+  :local:
+  :depth: 1
+
+Creating bundles
+--------------------------------------------------
+
 To bundle resources, override the method OnTenantResourceMappings in your Omnia feature and use the method CreateBundleFor of the resourceMapper. 
 
 .. code-block:: c#

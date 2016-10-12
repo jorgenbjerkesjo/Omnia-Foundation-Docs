@@ -9,6 +9,10 @@ The resource mappings aslo help create an logical hierachy or grouping of resour
 
 In the resource mappings you can also specify different properties and metadata.
 
+.. contents:: Sections:
+  :local:
+  :depth: 1
+
 Folders mapping
 ##################################################
 
@@ -92,7 +96,7 @@ SharePoint pagelayouts mapping
 Working with resource mappings
 --------------------------------------------------
 
-When developing new extension, after you have all the resources ready, you can create a new resource mapping class using Omnia toolings
+When developing new extension, after you have all the resources ready, you can create a new resource mapping class using Omnia tooling
 
 .. image:: /images/toolings-item-templates-resourcemapping.png
 
