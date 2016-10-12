@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-1. Download and install `Omnia Tooling for Visual Studio <tooling.html>`_
+1. Download and install :doc:`Omnia Tooling for Visual Studio <release-notes/tooling>`
 ##############################################################
 
 2. Create new project with Omnia Extension project template
