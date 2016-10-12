@@ -11,7 +11,6 @@ Topics
     :titlesonly:
 
    fields
-   lists
    image-renditions
     
 

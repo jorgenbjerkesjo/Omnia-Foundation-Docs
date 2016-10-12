@@ -1,7 +1,7 @@
 Fields
 ============================
 
-Fields is used in Lists and Content Types in SharePoint and Omnia Foundation makes it easy to create field definitions by using attributes that can be provisioned using a :doc:`Omnia feature </fundamentals/omnia-feature>` or referenced in a :doc:`List definition </sharepoint-provisioning/lists>` definition.
+Fields is used in Lists and Content Types in SharePoint and Omnia Foundation makes it easy to create field definitions by using attributes that can be provisioned using a :doc:`Omnia feature </fundamentals/omnia-feature>` or referenced in a :doc:`List definition </sharepoint-provisioning/lists>`.
 
 All field attributes are located in the **Omnia.Foundation.Extensibility.Fields** namespace
 and the following list contains the different attributes that can be used to create field definitions. 
@@ -35,7 +35,7 @@ Field definitions can be referenced both in list definitions and content type de
 
     }
 
-.. note:: Even if the attribute is called **NoteFieldAttribute** its not necessary to include Attribute in the name **NoteField** is enough and that will make the code look more clean.
+.. note:: Even if the attribute is called **NoteFieldAttribute** its not necessary to include Attribute in the name, **NoteField** is enough and that will make the code look more clean.
   
 All field definitions requires the minimal **id** and **internalName** parameters since this is required to be able to create the field. For the different field attributes there are always minimal required parameters that need to be provided but there is also optional properties that can be specified. Below is an example of all the optional properties that can be specified on the NoteFieldAttribute
 

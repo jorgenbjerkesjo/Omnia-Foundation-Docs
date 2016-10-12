@@ -25,7 +25,7 @@ To bundle resources, override the method OnTenantResourceMappings in your Omnia 
             .Include<ResourcesMapping.Services>();
     }     
 
-You can add specific file from the `resources mapping </fundamentals/resource-mappings.html>`_
+You can add specific file from the :doc:`resources mapping </fundamentals/resource-mappings.html>`
 
 .. code-block:: c#
 

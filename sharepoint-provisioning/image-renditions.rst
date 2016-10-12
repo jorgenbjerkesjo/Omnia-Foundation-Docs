@@ -18,7 +18,7 @@ To create Image Renditions start by creating a new class that inherits from Imag
     {
     }
 
-Now that we have the specification of the Image Renditions all we need to do is to add the mapping code in the OnSharePointArtifacts method of an :doc:`Omnia feature </fundamentals/omnia-feature>`. that will perform the deployment. 
+Now that we have the specification of the Image Renditions all we need to do is to add the mapping code in the OnSharePointArtifacts method of an :doc:`Omnia feature </fundamentals/omnia-feature>` that will perform the deployment. 
 
 .. note:: The provisioning must be done from a Site Collection scoped feature
 
