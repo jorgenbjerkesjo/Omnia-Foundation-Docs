@@ -137,8 +137,8 @@ SharePointContextProvidedController has a built-in Logging service which write t
         }
     }
 
-The base controller class also provides some contextual information like:
+Other contextual information are also provided:
 
-- TenantId: ID of the Omnia tenant that the current SharePoint site belongs to.
-- LoginName: SharePoint loginname of the current user.
-- OmniaInstanceMode: The mode that Omnia Foundation is running in, either Tenant or SiteCollectionOnly
+- **TenantId**: ID of the Omnia tenant that the current SharePoint site belongs to.
+- **LoginName**: SharePoint loginname of the current user.
+- **OmniaInstanceMode**: The mode that Omnia Foundation is running in, either Tenant or SiteCollectionOnly
