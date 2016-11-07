@@ -11,6 +11,7 @@ Topics
     :titlesonly:
 
    dialogs
+   configuration
     
 
     
