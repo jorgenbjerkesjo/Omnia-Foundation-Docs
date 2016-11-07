@@ -3,7 +3,7 @@ Configuration Service
 
 .. note:: This documentation is a work in progress and contributions can be made on our Github repo
 
-Configuration service is a utility for working with Omnia configurations.
+Configuration service is a utility for working with Omnia configurations. Read more about configuration in Omnia `here </fundamentals/configuration.html>`_
 
 Available Methods
 --------------------------------------------------
@@ -56,7 +56,7 @@ Examples
 
 .. note:: To use the ConfigurationService, you need to import The module OmniaExtensibilityModule into the NgModule of your component or add it directly to the list of providers of your compoment
 
-**Injection Example**
+**Injection**
 
 .. code-block:: javascript
 

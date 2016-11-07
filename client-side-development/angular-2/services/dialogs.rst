@@ -47,7 +47,7 @@ Examples
 
 .. note:: To use the DialogService, you need to import The module OmniaExtensibilityModule into the NgModule of your component or add it directly to the list of providers of your compoment
 
-**Injection Example**
+**Injection**
 
 .. code-block:: javascript
 

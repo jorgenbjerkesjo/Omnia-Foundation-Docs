@@ -12,6 +12,7 @@ Topics
 
    dialogs
    configuration
+   localization
     
 
     
