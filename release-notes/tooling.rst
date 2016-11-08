@@ -6,6 +6,17 @@ Here you can find the releases of the Omnia Tooling for Visual Studio 2013/2015
   :local:
   :depth: 1
 
+Stable 1.0.1.2305-62
+--------------------------------------------------
+
+**What`s new**
+
+- Update Omnia Control Item Templates for Angular 2 to comply with Angular 2.0.0
+- Update Omnia Extension Sample Project Template with new samples of Angular 2
+
+`Download vsix <http://nuget.preciofishbone.se/omniatoolings/prod/omniatooling.1.0.1.2305-62.vsix>`_
+
+
 Stable 1.0.1.1699-48
 --------------------------------------------------
 
