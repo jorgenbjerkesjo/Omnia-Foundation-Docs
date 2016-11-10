@@ -10,7 +10,8 @@ Topics
 .. toctree::
     :titlesonly:
 
-   dropdownlist   
+   dropdownlist
+   colorpicker   
     
 
     
