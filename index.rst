@@ -13,7 +13,8 @@ Topics
     getting-started
     fundamentals/index
     sharepoint-provisioning/index
-    custom-webapi/index    
-    client-side-development/index
+    custom-webapi/index
+    jobs/index    
+    client-side-development/index    
     release-notes/index
     tooling
