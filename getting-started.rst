@@ -14,7 +14,7 @@ Download and install Office Developer Tools from https://www.visualstudio.com/vs
 3. Install TypeScript for Visual Studio
 #####
 
-Download and install TypesScript for Visual Studio. 
+Download and install TypeScript for Visual Studio. 
 
 The installation file for Visual Studio 2015 is available from https://www.microsoft.com/en-us/download/details.aspx?id=48593
 
