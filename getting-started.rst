@@ -1,10 +1,29 @@
 Getting Started
 ===============
 
-1. Download and install :doc:`Omnia Tooling for Visual Studio <release-notes/tooling>`
+1. Install Node JS
+######
+
+Download and install Node JS from https://nodejs.org/ . Choose the latest **Current** version.
+
+2. Install Office Developer Tools
+####
+
+Download and install Office Developer Tools from https://www.visualstudio.com/vs/office-tools/
+
+3. Install TypeScript for Visual Studio
+#####
+
+Download and install TypesScript for Visual Studio. 
+
+The installation file for Visual Studio 2015 is available from https://www.microsoft.com/en-us/download/details.aspx?id=48593
+
+4. Install Omnia Tooling for Visual Studio
 ##############################################################
 
-2. Create new project with Omnia Extension project template
+Download and install :doc:`Omnia Tooling for Visual Studio <release-notes/tooling>`
+
+5. Create new project with Omnia Extension project template
 ##############################################################
 
 .. image:: /images/toolings-project-templates.png
@@ -19,7 +38,7 @@ A project created with Omnia Extension Sample template will have a structure lik
 
 .. image:: /images/toolings-project-structure.png
 
-3. Configure Precio Fishbone NuGet package source in Visual Studio
+6. Configure Precio Fishbone NuGet package source in Visual Studio
 ##############################################################
 
 Precio Fishbone NuGet package source is needed for download Omnia NuGet packages. To configure Precio Fishbone NuGet package source, follow these steps:
@@ -33,7 +52,7 @@ Precio Fishbone NuGet package source is needed for download Omnia NuGet packages
 .. image:: /images/nuget-package-source.png
 
 
-4. Register your extension in Omnia Foundation
+7. Register your extension in Omnia Foundation
 ##############################################################
 
 Open the file **extension.json** in MyOmniaExtension project and copy the extension ID
@@ -48,7 +67,7 @@ Fill in your extension ID and click create. Your extension will be registered wi
 
 .. image:: /images/omnia-admin-new-extension-secret.png
 
-5. Set the environment information in your project
+8. Set the environment information in your project
 ##############################################################
 
 Open the file **environment.json** in MyOmniaExtension  and fill in:
@@ -59,7 +78,7 @@ Open the file **environment.json** in MyOmniaExtension  and fill in:
 
 .. image:: /images/toolings-environment-json.png
 
-6. Deploy your extension
+9. Deploy your extension
 ##############################################################
 
 Right click on MyOmniaExtension project and click Omnia Deploy
@@ -70,7 +89,7 @@ You can see the deployment progress in the Output window in Visual Studio
 
 .. image:: /images/toolings-omnia-deploy-output.png 
 
-7. Verify 
+10. Verify 
 ##############################################################
 
 After the extension has been deployed successfully to Omnia, you can verify it by navigating to **System > Extension** in Omnia admin
