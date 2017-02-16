@@ -8,17 +8,18 @@ Topics
 ------
 
 .. toctree::
-    :titlesonly:
+   :titlesonly:
 
-    omnia-extension-package
-    omnia-feature
-    resource-mappings
-    localization
-    permissions
-    configuration
-    bundling
-    logging
-    components/index
+   omnia-extension-package
+   omnia-feature
+   resource-mappings
+   localization
+   permissions
+   configuration
+   bundling
+   logging
+   provisioning-pipeline
+   components/index
 
     
     
