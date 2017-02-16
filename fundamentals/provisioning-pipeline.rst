@@ -98,7 +98,7 @@ Example of an AfterContentReplacements method
       {
           try
           {
-              content = content.InsertAfter("<div class=\"myClass\">", "<div>This is added in front of the Hello World tag added in the BeforeContentReplacements method</div>");
+              content = content.InsertBefore("<div class=\"myClass\">", "<div>This is added in front of the Hello World tag added in the BeforeContentReplacements method</div>");
           }
           catch (Exception ex)
           {
