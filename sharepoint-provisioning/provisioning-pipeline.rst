@@ -5,8 +5,6 @@ Omnia provides a way of doing modifications to resources provisioned as part of 
 
 A Provisioning Pipeline makes it possible to modify the content of a resource file at the time it is provisioned to a SharePoint site. This enables you to adapt those resources to specific needs.
 
-.. note:: At this time, Provisioning Pipeline only applies to the Omnia master page.
-
 Add a Provisioning Pipeline
 #######
 
@@ -41,7 +39,7 @@ The **SharePointFileProvisioningPipeline** class has two overridable methods:
 
 The **content** parameter of the methods contains the full file content in a string format. This allows you to do string operations like **Contains** and **Replace**. Omnia also provides a number of extensions to the String object in C#, like **InsertBefore** and **InsertAfter**.
 
-The **tenantResource** parameter contains informmation about the resource that is currently being processed. You can do comparisons with this parameter to make sure your modifications only affects a specific Omnia resource:
+The **tenantResource** parameter contains information about the resource that is currently being processed. You can do comparisons with properties in this object to make sure your modifications only affects a specific Omnia resource:
 
 .. code-block:: c#
 

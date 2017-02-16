@@ -1,7 +1,7 @@
-Fields
+Field
 ============================
 
-Fields is used in Lists and Content Types in SharePoint and Omnia Foundation makes it easy to create field definitions by using attributes that can be provisioned using a :doc:`Omnia feature </fundamentals/omnia-feature>` or referenced in a :doc:`List definition </sharepoint-provisioning/lists>`.
+Fields are used in Lists and Content Types in SharePoint and Omnia Foundation makes it easy to create field definitions by using attributes that can be provisioned using a, :doc:`Omnia feature </fundamentals/omnia-feature>` or referenced in a :doc:`List definition </sharepoint-provisioning/lists>`.
 
 All field attributes are located in the **Omnia.Foundation.Extensibility.Fields** namespace
 and the following list contains the different attributes that can be used to create field definitions. 
