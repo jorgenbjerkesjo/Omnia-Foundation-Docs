@@ -12,6 +12,7 @@ Topics
 
    fields
    content-types
+   lists
    image-renditions
    provisioning-pipeline
     
