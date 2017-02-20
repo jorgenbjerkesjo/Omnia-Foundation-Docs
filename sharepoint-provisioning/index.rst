@@ -11,6 +11,7 @@ Topics
    :titlesonly:
 
    fields
+   content-types
    image-renditions
    provisioning-pipeline
     
