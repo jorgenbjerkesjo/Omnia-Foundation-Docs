@@ -14,6 +14,7 @@ Topics
    content-types
    lists
    image-renditions
+   files/index
    provisioning-pipeline
     
 

@@ -22,3 +22,12 @@ Example:
 		
 		return ctx.Web.ServerRelativeUrl;
 	}
+	
+The **ExecuteQueryIfNeeded** method also takes an optional parameter of type **Microsoft.SharePoint.Client.ClientContextExtensions.ExecuteOption**. This is an enum with two possible values:
+
+- LoadAllIfOneIsNeeded
+- LoadOnlyNeeded
+
+This is useful to decide if only missing property should be loaded from the server, or if all loaded properties should be reloaded if an execute needs to be done.
+
+If this parameter is not supplied, **LoadOnlyNeeded** is used.
