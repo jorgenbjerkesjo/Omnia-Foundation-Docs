@@ -1,7 +1,8 @@
 Generic File
 ============================
 
-There could be a need in your project to provision other kinds of files than the ones outlined above. This could be done in either a **Site Collection** scoped feature or a **Site** scoped feature.
+There could be a need in your project to provision other kinds of files than the ones outlined in the previous sections. 
+This can be done in either a **Site Collection** scoped feature or a **Site** scoped feature.
 
 Locate the **public override void OnTenantResourceMappings(TenantResourcesMapper resourceMapper)** method.
 
