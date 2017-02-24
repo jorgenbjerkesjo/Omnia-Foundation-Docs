@@ -20,7 +20,7 @@ Add the following code, replacing **TenantResourcesMapping.Files** with the clas
 	
 Notice that in the **SetFileName** you can decide the filename of the uploaded file.
 
-The **DeploysTo()** method can either be called,like above with a predefined library from the **SharePointFileDeploymentTargets** class, or with a relative path to a library
+The **DeploysTo()** method can either be called,like above with a predefined library from the **SharePointFileDeploymentTargets** class, or with a site (web) relative path to a library
 
 .. code-block:: c#
 
