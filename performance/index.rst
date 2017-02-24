@@ -6,7 +6,7 @@ The following sections will guide you in using functionality in Omnia to improve
 ClientContext.LoadIfNeeded and ClientContext.ExecuteQueryIfNeeded
 ####
 
-A lot of the times a SharePoint Client Context is passed  between different services and you do not know if the data you need has already been loaded or if an **ExecuteQuery** is needed.
+Often, a single SharePoint Client Context is passed between different services and you do not know if the data you need has already been loaded or if an **ExecuteQuery** is needed.
 
 To make this process more effective and straight forward, Omnia has implemented two extension methods on **ClientContext**: **LoadIfNeeded** and **ExecuteQueryIfNeeded**.
 
