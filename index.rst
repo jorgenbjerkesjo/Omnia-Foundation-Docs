@@ -16,5 +16,6 @@ Topics
    custom-webapi/index
    jobs/index    
    client-side-development/index
+   performance/index
    release-notes/index
    contribute-to-doc/index
