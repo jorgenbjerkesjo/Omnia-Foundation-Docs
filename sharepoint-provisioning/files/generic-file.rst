@@ -20,6 +20,18 @@ Add the following code, replacing **TenantResourcesMapping.Files** with the clas
 	
 Notice that in the **SetFileName** you can decide the filename of the uploaded file.
 
+You can also use the **RenameFile("OldFileName.aspx")** to update an already provisioned file, where you have changed the file name in your resource mapping.
+
+.. code-block:: c#
+
+	public override void OnTenantResourceMappings(TenantResourcesMapper resourceMapper)
+	{
+		resourceMapper.MapTenantResource<TenantResourcesMapping.Files>(q => q.MyFile)
+			.WithSettingsForGenericFile()
+			.RenameFile("OldFileName.html")
+			.DeploysTo(SharePointFileDeploymentTargets.StyleLibrary);
+	}
+
 The **DeploysTo()** method can either be called,like above with a predefined library from the **SharePointFileDeploymentTargets** class, or with a site (web) relative path to a library
 
 .. code-block:: c#
