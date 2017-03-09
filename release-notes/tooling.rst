@@ -6,6 +6,15 @@ Here you can find the releases of the Omnia Tooling for Visual Studio 2013/2015
   :local:
   :depth: 1
 
+  Stable 1.0.1.3965
+--------------------------------------------------
+
+**What`s new**
+
+- New extension projects can now build without errors
+
+`Download vsix <http://nuget.preciofishbone.se/omniatoolings/prod/omniatooling.1.0.1.3965.vsix>`_
+
 Stable 1.0.1.2305-62
 --------------------------------------------------
 
