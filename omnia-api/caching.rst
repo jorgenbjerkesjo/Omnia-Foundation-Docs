@@ -103,7 +103,7 @@ Gets objects from the distributed cache by supplying a list of the keys the item
 GetFromDistributedCache<T>
 #######
 
-Gets an object from the disitributed cache, cast to the specified type
+Gets an object from the distributed cache, cast to the specified type
 
 .. code-block:: c#
 
