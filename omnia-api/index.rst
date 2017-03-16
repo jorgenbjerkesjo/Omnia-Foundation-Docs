@@ -27,3 +27,4 @@ Services
     caching
     configurations	
     email
+    features
