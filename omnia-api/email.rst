@@ -9,9 +9,8 @@ You reach the Caching API through the following service
 
 	OmniaApi.WorkWith(Ctx.Omnia()).Email(Ctx);
 	
-The API contains the following methods:
 
-.. contents:: Sections:
+.. contents:: The API contains the following methods:
   :local:
   :depth: 1
 

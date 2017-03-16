@@ -24,5 +24,6 @@ Services
 .. toctree::
     :titlesonly:
 
-    caching  
+    caching
+    configurations	
     email

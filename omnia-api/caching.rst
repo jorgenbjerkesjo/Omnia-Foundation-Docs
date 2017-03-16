@@ -8,10 +8,9 @@ You reach the Caching API through the following service
 .. code-block:: c#
 
 	OmniaApi.WorkWith(Ctx.Omnia()).Caching();
-	
-The API contains the following methods:
 
-.. contents:: Sections:
+
+.. contents:: The API contains the following methods:
   :local:
   :depth: 1
 
