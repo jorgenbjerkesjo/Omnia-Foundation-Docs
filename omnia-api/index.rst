@@ -28,3 +28,4 @@ Services
     configurations	
     email
     features
+    logging
