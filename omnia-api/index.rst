@@ -29,3 +29,4 @@ Services
     email
     features
     logging
+    security
