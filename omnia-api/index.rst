@@ -28,5 +28,6 @@ Services
     configurations	
     email
     features
+    lists
     logging
     security
