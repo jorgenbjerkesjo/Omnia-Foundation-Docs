@@ -20,8 +20,12 @@ You reach the Security API through the following service
 AddOrUpdateOmniaPermissionRoles
 #######
 
+*Documentation in progress*
+
 DeleteOmniaPermissionRolesForExtensionPackage
 #######
+
+*Documentation in progress*
 
 DoesUserHavePermissionOnWeb
 #######
@@ -99,3 +103,5 @@ Returns **true** if the user is a member of the required Omnia role, else **fals
 
 SearchOmniaPermissionRoles
 #######
+
+*Documentation in progress*
