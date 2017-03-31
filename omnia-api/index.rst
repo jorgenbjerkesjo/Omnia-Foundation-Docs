@@ -25,7 +25,8 @@ Services
     :titlesonly:
 
     caching
-    configurations	
+    configurations
+    controls
     email
     features
     lists
