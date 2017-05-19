@@ -22,16 +22,16 @@ Use this method to create a file in a library based on a supplied byte array con
 .. code-block:: c#
 
 	void OmniaApi.WorkWith(Ctx.Omnia()).Lists(Ctx)
-		.AddFileToList(Guid listId, string folderServerRelativeUrl, string fileName, string fileType, byte[] data);	
+		.AddFileToList(Guid listId, string folderServerRelativeUrl, string fileName, byte[] data);	
 
-Pass in the GUID of the library, a server relative Url to a folder (or empty string to add in root folder), a file name, and a file type (empty string)
-	
+Pass in the GUID of the library, a server relative Url to a folder (or empty string to add in root folder) and a file name.
+
 Optionally, you can also supply a boolean indicating if the file should be published or not
 
 .. code-block:: c#
 
 	void OmniaApi.WorkWith(Ctx.Omnia()).Lists(Ctx)
-		.AddFileToList(Guid listId, string folderServerRelativeUrl, string fileName, string fileType, byte[] data, bool publish);
+		.AddFileToList(Guid listId, string folderServerRelativeUrl, string fileName, byte[] data, bool publish);
 
 GetAllDocumentLibraries
 #######
