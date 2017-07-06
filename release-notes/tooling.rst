@@ -6,6 +6,20 @@ Here you can find the releases of the Omnia Tooling for Visual Studio 2013/2015
   :local:
   :depth: 1
 
+Visual Studio 2017 1.0.5943 Beta 1
+--------------------------------------------------
+
+**What`s new**
+
+- Completely new Project Wizard and Item Template Wizard that uses Github as source
+- Angular 4 support
+- Extensible TaskRunner (angular aot, less etc)
+- We now use npm for Foundation (https://www.npmjs.com/package/@omnia/foundation)
+
+Please report issues with tooling on our `Github repo <https://github.com/preciofishbone/Omnia-Foundation>`_
+
+`Download vsix <http://nuget.preciofishbone.se/omniatoolings/prod/omniatooling.1.0.5932-beta.vsix>`_
+
 Visual Studio 2017 Preview
 --------------------------------------------------
 
