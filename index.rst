@@ -13,6 +13,7 @@ Topics
    getting-started
    fundamentals/index
    sharepoint-provisioning/index
+   omnia-api/index
    custom-webapi/index
    jobs/index    
    client-side-development/index
