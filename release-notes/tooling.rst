@@ -9,6 +9,9 @@ Here you can find the releases of the Omnia Tooling for Visual Studio 2013/2015
 Visual Studio 2017 1.0.5943 Beta 1
 --------------------------------------------------
 
+.. note:: 
+    - To be able to use this Tooling you need to target a Tenant with Omnia Foundation version 1.0.5862 or higher
+
 **What`s new**
 
 - Completely new Project Wizard and Item Template Wizard that uses Github as source
