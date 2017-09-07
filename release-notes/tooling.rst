@@ -6,6 +6,21 @@ Here you can find the releases of the Omnia Tooling for Visual Studio 2013/2015
   :local:
   :depth: 1
 
+Visual Studio 2017 1.0.6828 Beta 3 (Codebase Edition)
+--------------------------------------------------
+
+.. note:: 
+    - To be able to use this Tooling you need to target a Tenant with Omnia Foundation version 1.0.5862 or higher
+
+**What`s new**
+
+- Visual Resource Mapper makes it easy adding resources to mapping files
+- Support for Visual Resource Mapper when adding TenantResources from item templates
+
+Please report issues with tooling on our `Github repo <https://github.com/preciofishbone/Omnia-Foundation>`_
+
+`Download vsix <http://nuget.preciofishbone.se/omniatoolings/prod/omniatooling.1.0.6828-beta.vsix>`_
+
 Visual Studio 2017 1.0.6250 Beta 2
 --------------------------------------------------
 
