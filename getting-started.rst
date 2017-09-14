@@ -60,7 +60,7 @@ The second section exists to help you configure the communication beween your de
 - **Tenant Id** is found in Omnia Admin in your tenant, in the Settings section (see image below)
 - **Foundation Url** is also found in Omnia Admin, in the Settings section (see image below)
 
-.. image:: /images/omnia-admin-tenant-info.png
+.. image:: /images/omnia-admin-tenant-info.PNG
 
 - **Api Secret**. This secret is recieved from Omnia by navigating to Omnia Admin > System > Extensions > Register Extension and paste in your Extension Id (from the Visual Studio dialog)
 
@@ -91,7 +91,7 @@ The **Extension Package** checkbox has some child items that can be selected
  - Below the **Examples** checkbox you can select different code examples to be provisioned to your project, to set you off to a quick start
 - The **Setup basic folder structure** checkbox will add a best practice folder structure to your project
 
-After filling in all the fields in the form, and selecting all the checkboxes, the following solution structire will be created
+After filling in all the fields in the form, and selecting all the checkboxes, the following solution structure will be created
 
 .. image:: /images/toolings-project-structure-new.png
 
@@ -102,9 +102,9 @@ After filling in all the fields in the form, and selecting all the checkboxes, t
 
 Open the file **environment.json** in MyOmniaExtension and fill in:
 
-- TenantId: you can get from the System page in Omnia admin
-- ApiSecret: the secret you got when registered your extension in step 6
-- FoundationUrl: the URL to your Omnia admin 
+- TenantId: you get this from the System page in Omnia admin
+- ApiSecret: the secret you got when you registered your extension in step 6
+- FoundationUrl: you get this from the System page in Omnia admin 
 
 .. image:: /images/toolings-environment-json.png
 
