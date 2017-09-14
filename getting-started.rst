@@ -126,8 +126,6 @@ After the extension has been deployed successfully to Omnia, you can verify it b
 
 .. image:: /images/omnia-admin-new-extension-success.png 
 
-And in the **Features** page you should see the features from your extension. Click on **MyOmniaExtension Core** and click Activate.
+And in the **Features** page you should see the features from your extension.
 
-.. image:: /images/omnia-admin-new-extension-feature.png 
-
-After the feature has been activate, refresh the page and you should see a new fav icon
+Congratulations, you are now ready to build your magical Omnia extension!
