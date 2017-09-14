@@ -37,7 +37,7 @@ Download and install :doc:`Omnia Tooling for Visual Studio <release-notes/toolin
 6. Create new project with Omnia Extension project template
 #######
 
-.. image:: /images/extension-new-project.png
+.. image:: /images/extension-new-project.PNG
 
 .. note:: 
     - **Omnia Documentation** - Project template for creating an Omnia documentation package
@@ -47,15 +47,15 @@ Select the **Omnia Extension** template and name your project. Click OK.
 
 The following screen opens
 
-.. image:: /images/extension-new-omnia-extension-project.png
+.. image:: /images/extension-new-omnia-extension-project.PNG
 
 The first section is where you enter metadata about your extension. Normally there is no need to change these two values
 
-.. image:: /images/extension-dialog-extension.png 
+.. image:: /images/extension-dialog-extension.PNG 
 
 The second section exists to help you configure the communication beween your development environment and your Omnia tenant
 
-.. image:: /images/extension-dialog-devenv.png
+.. image:: /images/extension-dialog-devenv.PNG
 
 - **Tenant Id** is found in Omnia Admin in your tenant, in the Settings section (see image below)
 - **Foundation Url** is also found in Omnia Admin, in the Settings section (see image below)
@@ -77,7 +77,7 @@ The Foundation API version used in your tenant can be found in Omnia Admin > Sys
 
 The right hand side of the dialog determines the structure and files that will be created in the Extension projects
 
-.. image:: /images/extension-dialog-project-options.png
+.. image:: /images/extension-dialog-project-options.PNG
 
 - The **Extension Package** checkbox controls if an Omnia Extension project is created in the solution
 - The **Web API** checkbox controls if a Web API project, prepared to communicate with Omnia is created in the solution
