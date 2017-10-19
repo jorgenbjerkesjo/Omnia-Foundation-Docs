@@ -11,6 +11,11 @@ Download and install Visual Studio 2017 (not Community edition)
 
 Download and install Node JS from https://nodejs.org/ . Choose the latest **Current** version. (Tested with version 8.5.0)
 
+Or, if you have the need for running different versions of nodejs, for various projects.
+NVM (Node Version Manager) for windows is recomended, it allows for easy switching between nodejs versions.
+It can be found at https://github.com/coreybutler/nvm-windows
+You will need to uninstall nodejs if you already have it, instructions are on the repo.
+
 3. Install Office Developer Tools
 ######
 
