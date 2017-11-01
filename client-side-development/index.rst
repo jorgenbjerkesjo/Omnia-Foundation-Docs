@@ -10,6 +10,7 @@ Topics
 .. toctree::
     :titlesonly:
 
+    live-reload
     angular-1/index
     angular-2/index
     
