@@ -14,5 +14,6 @@ After creating the needed Resource Mappings, follow the steps in the section bel
    :titlesonly:
 
    page-layout
+   glue-page-layout
    webpart
    generic-file

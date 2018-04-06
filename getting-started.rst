@@ -11,6 +11,11 @@ Download and install Visual Studio 2017 (not Community edition)
 
 Download and install Node JS from https://nodejs.org/ . Choose the latest **Current** version. (Tested with version 8.5.0)
 
+Or, if you have the need for running different versions of nodejs, for various projects.
+NVM (Node Version Manager) for windows is recomended, it allows for easy switching between nodejs versions.
+It can be found at https://github.com/coreybutler/nvm-windows
+You will need to uninstall nodejs if you already have it, instructions are on the repo.
+
 3. Install Office Developer Tools
 ######
 
@@ -126,8 +131,6 @@ After the extension has been deployed successfully to Omnia, you can verify it b
 
 .. image:: /images/omnia-admin-new-extension-success.png 
 
-And in the **Features** page you should see the features from your extension. Click on **MyOmniaExtension Core** and click Activate.
+And in the **Features** page you should see the features from your extension.
 
-.. image:: /images/omnia-admin-new-extension-feature.png 
-
-After the feature has been activate, refresh the page and you should see a new fav icon
+Congratulations, you are now ready to build your magical Omnia extension!
