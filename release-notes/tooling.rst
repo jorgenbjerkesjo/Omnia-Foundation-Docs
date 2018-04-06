@@ -6,6 +6,13 @@ Here you can find the releases of the Omnia Tooling for Visual Studio 2013/2015
   :local:
   :depth: 1
 
+Visual Studio 2017 1.0.0 
+--------------------------------------------------
+
+Please report issues with tooling on our `Github repo <https://github.com/preciofishbone/Omnia-Foundation>`_
+
+`Download vsix <http://nuget.preciofishbone.se/omniatoolings/prod/omniatooling.1.0.0.vsix>`_
+
 Visual Studio 2017 1.0.6924 Beta 4 (Vietnam Codebase Edition)
 --------------------------------------------------
 
